@@ -1,0 +1,41 @@
+{
+    "name": "willywes/agora-sdk-php",
+    "description": "Agora.io SDK PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejandro Isla",
+            "email": "alejandro.isla.c@gmail.com",
+            "homepage": "http://alejandroisla.cl"
+        }
+    ],
+    "homepage": "https://github.com/willywes/agora-sdk-php",
+    "keywords": ["Laravel", "Agora.io", "SDK", "Agora SDK", "PHP", "Agora SDK PHP"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Willywes\\AgoraSDK\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Willywes\\AgoraSDK\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Willywes\\AgoraSDK\\AgoraSDKServiceProvider"
+            ],
+            "aliases": {
+                "AgoraSDK": "Willywes\\AgoraSDK\\Facades\\AgoraSDK"
+            }
+        }
+    }
+}
