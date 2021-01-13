@@ -6,7 +6,8 @@ class AgoraSDK
 {
     // Build wonderful things
 
-    public static function Version(){
+    public static function Version()
+    {
         return 'test';
     }
 }
