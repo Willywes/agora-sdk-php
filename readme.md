@@ -79,6 +79,6 @@ license. Please see the [license file](license.md) for more information.
 [link-packagist]: https://packagist.org/packages/willywes/agora-sdk-php
 [link-downloads]: https://packagist.org/packages/willywes/agora-sdk-php
 [link-travis]: https://travis-ci.org/willywes/agora-sdk-php
-[link-styleci]: https://styleci.io/repos/12345678
+[link-styleci]: https://styleci.io/repos/329085525
 [link-author]: https://github.com/willywes
 [link-contributors]: ../../contributors
