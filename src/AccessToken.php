@@ -194,8 +194,8 @@ class AccessToken
 
         $sig = hash_hmac('sha256', implode(array_map('chr', $val)), $this->appCertificate, true);
 
-        $crc_channel_name = crc32($this->channelName) & 0xffffffff;
-        $crc_uid = crc32($this->uid) & 0xffffffff;
+        $crc_channel_name = crc32($this->channelName) & 0xFFFFFFFF;
+        $crc_uid = crc32($this->uid) & 0xFFFFFFFF;
 
         $content = array_merge(unpack('C*', packString($sig)), unpack('C*', pack('V', $crc_channel_name)), unpack('C*', pack('V', $crc_uid)), unpack('C*', pack('v', count($msg))), $msg);
         $version = '006';
